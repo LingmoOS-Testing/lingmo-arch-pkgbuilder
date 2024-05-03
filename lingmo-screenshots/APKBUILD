@@ -1,0 +1,28 @@
+# Maintainer: Intro <intro-iu@outlook.com>
+pkgname=lingmo-screenshots
+arch="x86_64"
+depends="
+    qt5-qtquickcontrols2-dev
+    qt5-qttools-dev
+"
+depends_dev=""
+pkgdesc="Screenshot tool for LingmoOS."
+pkgrel=0
+pkgver=1.0.0
+makedepends=""
+url="https://lingmo.org"
+license="GPL"
+source="https://github.com/Intro-iu/$pkgname/releases/download/v$pkgver/$pkgname.tar.xz"
+
+build() {
+    echo "Compiling $pkgname"
+    mkdir -pv "$srcdir/$pkgname/build" && cd "$srcdir/$pkgname/build"
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+    make -j4 || return 1
+}
+
+package() {
+    mkdir -pv "$pkgdir"
+    cd "$srcdir/$pkgname/build"
+    make DESTDIR="$pkgdir" install
+}
