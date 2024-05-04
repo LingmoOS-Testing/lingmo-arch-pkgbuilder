@@ -14,24 +14,23 @@ Todos:
 
 :white_check_mark: lingmo-baloo
 
-:white_large_square: lingmo-calculator
+:white_check_mark: lingmo-calculator
 
-:white_large_square: lingmo-core
+:white_check_mark: lingmo-core
 
-:white_large_square: lingmo-cursor-themes
+:white_check_mark: lingmo-cursor-themes
 
-:white_large_square: lingmo-dock
+:white_check_mark: lingmo-dock
 
-:white_large_square: lingmo-filemanager
+:white_check_mark: lingmo-filemanager
 
 :white_check_mark: lingmo-fontpkg
 
-:white_large_square: lingmo-gtk-themes
-
+:white_check_mark: lingmo-gtk-themes
 
 :white_large_square: lingmo-kwin-plugins
 
-:white_large_square: lingmo-launcher
+:white_check_mark: lingmo-launcher
 
 :white_large_square: lingmo-qt-plugins
 

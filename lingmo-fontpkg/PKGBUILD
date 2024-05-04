@@ -6,6 +6,8 @@ pkgdesc="Some common fonts for Lingmo-Arch"
 arch=("x86_64")
 license=("GPL")
 url="https://lingmo.org"
+depends=()
+makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 
 source=("https://github.com/LingmoOS-Testing/$pkgname/releases/download/v$pkgver/$pkgname.tar.xz")
 sha256sums=('SKIP')
