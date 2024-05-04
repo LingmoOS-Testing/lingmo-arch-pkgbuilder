@@ -1,0 +1,32 @@
+# Maintainer: Intro <intro-iu@outlook.com>
+pkgname=lingmo-core
+arch=("x86_64")
+depends=( 
+    "pkgconf" "qt5-base" "kcoreaddons5"
+    "qt5-quickcontrols2" "libxcursor"
+    "qt5-x11extras" "qt5-tools"
+    "kwindowsystem5" "kidletime5" "polkit" 
+    "polkit-qt5" "xorg-server-devel" 
+    "xf86-input-libinput" "xf86-input-synaptics"
+)
+makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
+pkgdesc="System backend and start session and more."
+pkgrel=0
+pkgver=1.0.0
+url="https://lingmo.org"
+license=("GPL")
+source=("https://github.com/Intro-iu/$pkgname/releases/download/v$pkgver/$pkgname.tar.xz")
+sha256sums=('SKIP')
+
+build() {
+    echo "Compiling $pkgname"
+    mkdir -pv "$srcdir/$pkgname/build" && cd "$srcdir/$pkgname/build"
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+    make -j8 || return 1
+}
+
+package() {
+    mkdir -pv "$pkgdir"
+    cd "$srcdir/$pkgname/build"
+    make DESTDIR="$pkgdir" install
+}
