@@ -32,15 +32,15 @@ Todos:
 
 :white_check_mark: lingmo-launcher
 
-:white_large_square: lingmo-qt-plugins
+:white_check_mark: lingmo-qt-plugins
 
-:white_large_square: lingmo-screenlocker
+:white_check_mark: lingmo-screenlocker
 
-:white_large_square: lingmo-screenshots
+:white_check_mark: lingmo-screenshots
 
-:white_large_square: lingmo-sddm-theme
+:white_check_mark: lingmo-sddm-theme
 
-:white_large_square: lingmo-settings
+:white_check_mark: lingmo-settings
 
 :white_large_square: lingmo-statusbar
 

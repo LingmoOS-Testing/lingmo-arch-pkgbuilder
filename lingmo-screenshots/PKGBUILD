@@ -1,10 +1,10 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-screenshots
 arch=("x86_64")
-depends="
-    qt5-quickcontrols2
-    qt5-tools
-"
+depends=(
+    "qt5-quickcontrols2"
+    "qt5-tools"
+)
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="Screenshot tool for LingmoOS."
 pkgrel=0
