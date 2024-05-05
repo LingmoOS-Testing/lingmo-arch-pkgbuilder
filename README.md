@@ -42,14 +42,14 @@ Todos:
 
 :white_check_mark: lingmo-settings
 
-:white_large_square: lingmo-statusbar
+:white_check_mark: lingmo-statusbar
 
-:white_large_square: lingmo-systemicons
+:white_check_mark: lingmo-systemicons
 
-:white_large_square: lingmo-terminal
+:white_check_mark: lingmo-terminal
 
-:white_large_square: lingmo-texteditor
+:white_check_mark: lingmo-texteditor
 
-:white_large_square: lingmo-videoplayer
+:white_check_mark: lingmo-videoplayer
 
 :white_check_mark: lingmo-wallpapers
