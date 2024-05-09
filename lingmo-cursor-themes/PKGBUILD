@@ -1,9 +1,7 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-cursor-themes
 arch=("x86_64")
-depends=(
-   
-)
+depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="Lingmo OS Cursor Themes"
 pkgrel=0

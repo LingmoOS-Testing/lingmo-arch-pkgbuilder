@@ -1,5 +1,5 @@
 # Maintainer: Intro <intro-iu@outlook.com>
-pkgname=lingmo-screenshots
+pkgname=lingmo-screenlocker
 arch=("x86_64")
 depends=(
     "qt5-base"
