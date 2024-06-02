@@ -9,11 +9,12 @@ url="https://lingmo.org"
 depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 
-source=("https://github.com/LingmoOS-Testing/$pkgname/releases/download/v$pkgver/$pkgname.tar.xz")
+source=("./$pkgname-main.tar.gz")
 sha256sums=('SKIP')
 
 build() {
     echo "Compiling $pkgname"
+    mv -v "$pkgname-main" "$pkgname"
     mkdir -pv "$srcdir/$pkgname/build" && cd "$srcdir/$pkgname/build"
     cmake ..
     make || return 1
