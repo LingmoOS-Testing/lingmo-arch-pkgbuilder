@@ -1,6 +1,6 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname="lingmo-fontpkg"
-pkgver=v0.1.0
+pkgver=1.1.0
 pkgrel=0
 pkgdesc="Some common fonts for Lingmo-Arch"
 arch=("x86_64")

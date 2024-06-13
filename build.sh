@@ -6,4 +6,5 @@ while IFS= read -r target; do
     cd ..
 done < pkgs
 mkdir -pv outputs
-find . -name "*.pkg.tar.zst" -exec mv {} outputs/ \;
+
+find . -type f -name "*.pkg.tar.zst" -exec mv {} outputs \;
