@@ -1,8 +1,11 @@
 # lingmo-arch-pkgbuilder
 
-:construction: 施工ing！ Coming soon...
+Build for Arch Linux to enable Lingmo's desktop &amp; software
 
-:warning: 请勿使用，生人勿近 :warning:
+## 请注意！
+:warning:该项目由于与其他项目的开发资源格式未统一，暂时无法使用！
+
+:construction: 施工ing！ Coming soon...
 
 Build for Arch Linux to enable Lingmo's desktop &amp; software
 

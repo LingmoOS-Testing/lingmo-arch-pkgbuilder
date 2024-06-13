@@ -1,6 +1,6 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname="lingmo-fontpkg"
-pkgver=0.1.0
+pkgver=v0.1.0
 pkgrel=0
 pkgdesc="Some common fonts for Lingmo-Arch"
 arch=("x86_64")
@@ -9,15 +9,19 @@ url="https://lingmo.org"
 depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 
-source=("./$pkgname-main.tar.gz")
+source=("git+https://github.com/LingmoOS-Testing/$pkgname.git")
 sha256sums=('SKIP')
+
+prepare() {
+    cd "$srcdir/$pkgname"
+    git checkout "$pkgver-$pkgrel"
+}
 
 build() {
     echo "Compiling $pkgname"
-    mv -v "$pkgname-main" "$pkgname"
     mkdir -pv "$srcdir/$pkgname/build" && cd "$srcdir/$pkgname/build"
     cmake ..
-    make || return 1
+    make -j8 || return 1
 }
 
 package() {
