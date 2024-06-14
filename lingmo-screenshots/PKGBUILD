@@ -8,10 +8,10 @@ depends=(
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="Screenshot tool for LingmoOS."
 pkgrel=0
-pkgver=1.0.0
+pkgver=1.9.9
 url="https://lingmo.org"
 license=("GPL")
-source=("git+https://github.com/LingmoOS-Testing/$pkgname.git")
+source=("git+https://codeup.aliyun.com/lingmo/SystemApps/$pkgname.git")
 sha256sums=('SKIP')
 
 prepare() {

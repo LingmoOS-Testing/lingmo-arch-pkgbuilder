@@ -5,10 +5,10 @@ depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="The system of LingmoOS has built-in wallpaper by default."
 pkgrel=0
-pkgver=1.0.0
+pkgver=2.0.0
 url="https://lingmo.org"
 license=("GPL")
-source=("git+https://github.com/LingmoOS-Testing/$pkgname.git")
+source=("git+https://codeup.aliyun.com/lingmo/CoreDE/$pkgname.git")
 sha256sums=('SKIP')
 
 prepare() {

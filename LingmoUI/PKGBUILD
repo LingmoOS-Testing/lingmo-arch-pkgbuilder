@@ -7,10 +7,10 @@ depends=(
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="LingmoUI is a GUI library based on QQC2 (Qt Quick Controls 2), every Lingmo application uses it."
 pkgrel=0
-pkgver=1.0.0
+pkgver=2.0.2
 url="https://lingmo.org"
 license=("GPL")
-source=("git+https://github.com/LingmoOS-Testing/$pkgname.git")
+source=("git+https://codeup.aliyun.com/lingmo/CoreDE/$pkgname.git")
 sha256sums=('SKIP')
 
 prepare() {

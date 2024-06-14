@@ -7,11 +7,11 @@ depends=(
 )
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="The status bar at the top displays the current status of the system, such as time, system tray, etc."
-pkgrel=0
-pkgver=1.0.0
+pkgrel=20
+pkgver=1.9.9
 url="https://lingmo.org"
 license=("GPL")
-source=("git+https://github.com/LingmoOS-Testing/$pkgname.git")
+source=("git+https://codeup.aliyun.com/lingmo/CoreDE/$pkgname.git")
 sha256sums=('SKIP')
 
 prepare() {
