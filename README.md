@@ -31,7 +31,7 @@ Todos:
 
 :white_check_mark: lingmo-gtk-themes
 
-:white_large_square: lingmo-kwin-plugins
+:white_check_mark: lingmo-kwin-plugins
 
 :white_check_mark: lingmo-launcher
 
