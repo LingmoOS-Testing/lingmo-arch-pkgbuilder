@@ -12,7 +12,7 @@ pkgrel=2
 pkgver=0.6.0
 url="https://lingmo.org"
 license=("GPL")
-source=("git+https://codeup.aliyun.com/lingmo/SystemApps/$pkgname.git")
+source=("git+https://github.com/LingmoOS/$pkgname.git")
 sha256sums=('SKIP')
 
 prepare() {
