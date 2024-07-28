@@ -5,7 +5,7 @@ depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="GTK themes for Lingmo OS"
 pkgrel=10
-pkgver=1.9.9
+pkgver=1.9.9-10
 
 url="https://lingmo.org"
 license=("GPL")
