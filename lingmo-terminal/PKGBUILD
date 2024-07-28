@@ -19,7 +19,6 @@ sha256sums=('SKIP')
 
 prepare() {
     cd "$srcdir/$pkgname"
-    git checkout "$pkgver-$pkgrel"
 }
 
 build() {
