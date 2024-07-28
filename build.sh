@@ -1,9 +1,10 @@
 #!/bin/bash
+set -e
 while IFS= read -r target; do
-    cd "$target"
+    pushd "$target"
     echo "Processing target: $target"
     makepkg -cfs --noconfirm
-    cd ..
+    popd
 done < pkgs
 mkdir -pv outputs
 
