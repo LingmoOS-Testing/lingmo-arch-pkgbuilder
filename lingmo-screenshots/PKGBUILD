@@ -11,7 +11,7 @@ pkgrel=0
 pkgver=1.9.9
 url="https://lingmo.org"
 license=("GPL")
-source=("git+https://github.com/LingmoOS/$pkgname.git")
+source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {

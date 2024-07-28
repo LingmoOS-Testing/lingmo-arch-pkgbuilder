@@ -11,7 +11,7 @@ pkgrel=0
 pkgver=2.1.4-1
 url="https://git.lingmo.org/SystemApps"
 license=("GPL")
-source=("git+https://github.com/LingmoOS/$pkgname.git")
+source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
