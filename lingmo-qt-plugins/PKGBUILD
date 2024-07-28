@@ -15,7 +15,7 @@ source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
-    cd "$srcdir/$pkgname"
+    cd "$srcdir/$pkgname-$pkgver"
 }
 
 build() {
