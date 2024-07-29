@@ -4,6 +4,7 @@ arch=("x86_64")
 depends=(
     "qt5-base" "qt5-tools" "qt5-x11extras" 
     "libqtxdg" "libdbusmenu-qt5" "libxcb"
+    "libqt5xdg"
 )
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="Unify Qt application style of LingmoOS."
