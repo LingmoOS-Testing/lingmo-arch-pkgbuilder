@@ -7,8 +7,8 @@ depends=(
 )
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="The system settings application for LingmoOS uses LingmoUI as the interface style."
-pkgrel=0
-pkgver=2.1.4-1
+pkgrel=1
+pkgver=2.1.4
 url="https://git.lingmo.org/SystemApps"
 license=("GPL")
 source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver-$pkgrel.tar.gz")
