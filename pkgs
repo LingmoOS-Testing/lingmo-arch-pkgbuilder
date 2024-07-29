@@ -6,6 +6,8 @@ lingmo-settings
 lingmo-dock
 lingmo-statusbar
 lingmo-launcher
+lingmo-terminal
+lingmo-systemicons
 lingmo-qt-plugins
 lingmo-cursor-themes
 lingmo-gtk-themes
@@ -13,8 +15,6 @@ lingmo-calculator
 lingmo-screenlocker
 lingmo-screenshots
 lingmo-sddm-theme
-lingmo-systemicons
-lingmo-terminal
 lingmo-texteditor
 lingmo-videoplayer
 lingmo-wallpapers
