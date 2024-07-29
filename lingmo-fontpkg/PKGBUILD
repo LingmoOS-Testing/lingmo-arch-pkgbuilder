@@ -1,15 +1,15 @@
 # Maintainer: Intro <intro-iu@outlook.com>
-pkgname=lingmo-systemicons
+pkgname=lingmo-fontpkg
 arch=("x86_64")
 depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
-pkgdesc="System default icon theme."
-pkgrel=5
-pkgver=2.0.3
-_realver=2.0.3-5
+pkgdesc="Lingmo OS Cursor Themes"
+pkgrel=2
+pkgver=1.1.0
+_realver=1.1.0-0
 url="https://lingmo.org"
 license=("GPL")
-source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${_realver}.tar.gz")
+source=("https://github.com/LingmoOS-Testing/${pkgname}/archive/refs/tags/${_realver}.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
