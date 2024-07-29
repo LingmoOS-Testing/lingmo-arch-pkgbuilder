@@ -1,6 +1,7 @@
 liblingmo
-lingmo-calculator
+LingmoUI
 lingmo-core
+lingmo-calculator
 lingmo-cursor-themes
 lingmo-dock
 lingmo-filemanager
@@ -18,4 +19,3 @@ lingmo-terminal
 lingmo-texteditor
 lingmo-videoplayer
 lingmo-wallpapers
-LingmoUI
