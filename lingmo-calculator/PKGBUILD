@@ -9,10 +9,10 @@ depends=(
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="A simple calculator."
 pkgrel=2
-pkgver=0.6-2
+pkgver=0.6
 url="https://lingmo.org"
 license=("GPL")
-source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver.tar.gz")
+source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver-$pkgrel.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
