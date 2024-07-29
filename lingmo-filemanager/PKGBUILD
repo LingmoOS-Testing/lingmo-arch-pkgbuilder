@@ -21,7 +21,7 @@ prepare() {
 
 build() {
     echo "Compiling $pkgname"
-    mkdir -pv "$srcdir/$pkgname/build" && cd "$srcdir/$pkgname/build"
+    mkdir -pv "$srcdir/$pkgname-$pkgver/build" && cd "$srcdir/$pkgname-$pkgver/build"
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make -j$(nproc) || return 1
 }
