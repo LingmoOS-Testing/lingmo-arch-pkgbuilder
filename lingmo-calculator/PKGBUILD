@@ -2,7 +2,6 @@
 pkgname=lingmo-calculator
 arch=("x86_64")
 depends=(
-    "cmake" "gcc"
     "qt5-tools"
     "qt5-quickcontrols2"
 )
