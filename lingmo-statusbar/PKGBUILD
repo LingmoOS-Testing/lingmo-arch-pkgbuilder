@@ -8,25 +8,25 @@ depends=(
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="The status bar at the top displays the current status of the system, such as time, system tray, etc."
 pkgrel=20
-pkgver=1.9.9-20
+pkgver=1.9.9
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/$pkgname/archive/refs/tags/$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
-    cd "$srcdir/$pkgname-$pkgver"
+    cd "$srcdir/$pkgname-$pkgver-$pkgrel"
 }
 
 build() {
     echo "Compiling $pkgname"
-    mkdir -pv "$srcdir/$pkgname-$pkgver/build" && cd "$srcdir/$pkgname-$pkgver/build"
+    mkdir -pv "$srcdir/$pkgname-$pkgver-$pkgrel/build" && cd "$srcdir/$pkgname-$pkgver-$pkgrel/build"
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make -j$(nproc) || return 1
 }
 
 package() {
     mkdir -pv "$pkgdir"
-    cd "$srcdir/$pkgname-$pkgver/build"
+    cd "$srcdir/$pkgname-$pkgver-$pkgrel/build"
     make DESTDIR="$pkgdir" install
 }
