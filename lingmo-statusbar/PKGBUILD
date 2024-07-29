@@ -27,6 +27,6 @@ build() {
 
 package() {
     mkdir -pv "$pkgdir"
-    cd "$srcdir/$pkgname/build"
+    cd "$srcdir/$pkgname-$pkgver/build"
     make DESTDIR="$pkgdir" install
 }
