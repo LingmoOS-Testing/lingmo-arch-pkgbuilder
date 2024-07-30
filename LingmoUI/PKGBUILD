@@ -21,7 +21,7 @@ build() {
     echo "Compiling $pkgname"
     mkdir -pv "$srcdir/${pkgname}-${pkgver}/build" && cd "$srcdir/${pkgname}-${pkgver}/build"
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-    make -j8 || return 1
+    make -j$(nproc) || return 1
 }
 
 package() {
