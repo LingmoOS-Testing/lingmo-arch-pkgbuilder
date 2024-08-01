@@ -1,16 +1,13 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-screenlocker
 arch=("x86_64")
-depends=(
-    "qt5-base"
-    "qt5-quickcontrols2"
-    "qt5-tools"
-)
+depends=()
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
-pkgdesc="Screen locker of LingmoOS."
+pkgdesc="Screenlocker of LingmoOS"
 pkgrel=0
 pkgver=2.0.0
 _realver=2.0.0-0
+
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${_realver}.tar.gz")
