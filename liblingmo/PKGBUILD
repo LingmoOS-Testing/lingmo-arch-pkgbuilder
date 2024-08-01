@@ -16,18 +16,18 @@ source=("https://github.com/LingmoOS/lib_lingmo/archive/refs/tags/${pkgver}.tar.
 sha256sums=('SKIP')
 
 prepare() {
-    cd "$srcdir/${pkgname}-${pkgver}"
+    cd "$srcdir/lib_lingmo-${pkgver}"
 }
 
 build() {
     echo "Compiling $pkgname"
-    mkdir -pv "$srcdir/${pkgname}-${pkgver}/build" && cd "$srcdir/${pkgname}-${pkgver}/build"
+    mkdir -pv "$srcdir/lib_lingmo-${pkgver}/build" && cd "$srcdir/lib_lingmo-${pkgver}/build"
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make -j$(nproc) || return 1
 }
 
 package() {
     mkdir -pv "$pkgdir"
-    cd "$srcdir/${pkgname}-${pkgver}/build"
+    cd "$srcdir/lib_lingmo-${pkgver}/build"
     make DESTDIR="$pkgdir" install
 }
