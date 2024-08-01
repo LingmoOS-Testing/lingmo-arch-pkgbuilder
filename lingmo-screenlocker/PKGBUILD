@@ -1,7 +1,7 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-screenlocker
 arch=("x86_64")
-depends=()
+depends=("qt5-base" "qt5-declarative" "qt5-x11extras" "dbus" "libx11")
 makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
 pkgdesc="Screenlocker of LingmoOS"
 pkgrel=0
