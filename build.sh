@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-e
 process_package() {
     local target=$1
     pushd "$target"
@@ -9,7 +8,6 @@ process_package() {
     makepkg -cfs --noconfirm
     popd
 }
-
 
 while IFS= read -r target; do
     if [[ -d "$target" ]]; then
@@ -19,9 +17,7 @@ while IFS= read -r target; do
     fi
 done < pkgs
 
-
 mkdir -pv outputs
-
 
 find . -type f -name "*.pkg.tar.zst" -exec bash -c '
     for file; do
