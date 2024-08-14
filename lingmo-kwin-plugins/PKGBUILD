@@ -1,8 +1,8 @@
 # Maintainer: chun-awa <chun-awa@itcdt.top>
 pkgname=lingmo-kwin-plugins
 arch=("x86_64")
-depends=("kwin" "qt5-base" "qt5-declarative" "kconfig" "kdecoration" "kguiaddons" "kcoreaddons" "kconfigwidgets" "kwindowsystem" "kwayland" "kwin")
-makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
+depends=('qt5-base' 'qt5-declarative' 'kconfig' 'kdecoration' 'kguiaddons' 'kcoreaddons' 'kconfigwidgets' 'kwindowsystem' 'kwayland' 'kwin' 'kdeclarative' 'plasma-framework' 'lingmoui')
+makedepends=('extra-cmake-modules' 'ninja' 'qt5-tools' 'git')
 pkgdesc="KWin plugin for LingmoOS"
 pkgrel=0
 pkgver=1.2.0
