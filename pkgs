@@ -1,5 +1,6 @@
 liblingmo
 LingmoUI
+lingmo-kwin-plugins
 lingmo-core
 lingmo-filemanager
 lingmo-settings
@@ -8,7 +9,6 @@ lingmo-statusbar
 lingmo-launcher
 lingmo-terminal
 lingmo-qt-plugins
-lingmo-kwin-plugins
 lingmo-cursor-themes
 lingmo-gtk-themes
 lingmo-calculator
