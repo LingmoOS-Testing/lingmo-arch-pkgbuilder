@@ -5,7 +5,7 @@ process_package() {
     local target=$1
     pushd "$target"
     echo "Processing target: $target"
-    makepkg -cfs --noconfirm
+    makepkg -cfsi --noconfirm
     popd
 }
 
