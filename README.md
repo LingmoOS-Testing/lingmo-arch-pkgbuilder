@@ -1,5 +1,7 @@
 # lingmo-arch-pkgbuilder
 
+Deprecated, moved to <https://github.com/LingmoOS/archlingmo-pkg>.
+
 Build for Arch Linux to enable Lingmo's desktop &amp; software
 
 ## 请注意！
